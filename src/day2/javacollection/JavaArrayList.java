@@ -33,8 +33,10 @@ public class JavaArrayList {
 		// searching - return boolean
 		System.out.println(numbers.contains(7));
 		
-		Collections.shuffle(numbers);
-		System.out.println("List: " + numbers);
+		//Collections.shuffle(numbers);
+		//System.out.println("List: " + numbers);
+		
+		System.out.println(Collections.binarySearch(numbers, 10));
 	
 		
 	}
