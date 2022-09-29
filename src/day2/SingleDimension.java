@@ -6,6 +6,8 @@ import java.util.Collections;
 public class SingleDimension {
 	public static void main(String[] args) {
 		Integer[] arr = new Integer[4];
+		System.out.println(arr);
+		
 		// prints the length of the array
 		System.out.println("length = " + arr.length);
 		// fill in the 3rd index array 

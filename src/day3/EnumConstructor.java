@@ -2,19 +2,25 @@ package day3;
 
 public enum EnumConstructor {
 	// enum constants calling the enum constructors
-	SMALL("The size is small."),
-	MEDIUM("The size is medium."), 
-	LARGE("The size is large."),
-	EXTRALARGE("The size is extra large.");
+	SMALL(0, "small"),
+	MEDIUM(1, "medium"), 
+	LARGE(2, "large"),
+	EXTRALARGE(3, "extralarge");
 
-	private final String pizzaSize;
+	private final Integer sizeInt;
+	private final String name;
 
 	// private enum constructor
-	private EnumConstructor(String pizzaSize) {
-	      this.pizzaSize = pizzaSize;
+	private EnumConstructor(Integer sizeInt, String name) {
+	      this.sizeInt = sizeInt;
+	      this.name = name;
 	   }
 
-	public String getSize() {
-		return pizzaSize;
+	public Integer getSizeInt() {
+		return sizeInt;
+	}
+	
+	public String getName() {
+		return name;
 	}
 }

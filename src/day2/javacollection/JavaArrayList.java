@@ -1,20 +1,27 @@
 package day2.javacollection;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+
+import day2.latihan.utils.Deret;
 
 public class JavaArrayList {
 	public static void main(String[] args) {
 		// Creating list using the ArrayList class
 		// cannot use primitive types
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
-
+		
+		
+		
 		// Add elements to the list
 		numbers.add(3);
 		numbers.add(1);
 		numbers.add(7);
 		System.out.println("List: " + numbers);
+		
+		numbers.forEach(angka -> Deret.bilanganFibo(angka));
 
 		// Access element from the list
 		int number = numbers.get(2);
@@ -37,7 +44,8 @@ public class JavaArrayList {
 		//System.out.println("List: " + numbers);
 		
 		System.out.println(Collections.binarySearch(numbers, 10));
-	
+		
+		
 		
 	}
 

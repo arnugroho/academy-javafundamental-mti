@@ -14,6 +14,7 @@ public class MethodFunction {
 	
 	public String getNama() {
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Masukkan nama : ");
 		String nama = scan.next();
 		scan.close();
 		return nama;
@@ -22,6 +23,11 @@ public class MethodFunction {
 	public void printNama() {
 		String nama = getNama();
 		System.out.println("nama saya : " + nama);
+	}
+	
+	public static void main(String[] args) {
+		MethodFunction methodFunction = new MethodFunction();
+		methodFunction.printNama();
 	}
 
 }

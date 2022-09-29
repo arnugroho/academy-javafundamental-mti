@@ -7,7 +7,7 @@ public class TryCatchEx {
 			int divideByZero = 5 / 0;
 			System.out.println("Rest of code in try block : " + divideByZero);
 		} catch (ArithmeticException e) {
-			System.out.println("ArithmeticException => " + e.getMessage());
+			System.out.println("ArithmeticException => " + e.getLocalizedMessage());
 		}
 	}
 }

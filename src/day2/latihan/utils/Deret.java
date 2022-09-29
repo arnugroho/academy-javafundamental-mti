@@ -1,4 +1,4 @@
-package day2.latihan;
+package day2.latihan.utils;
 
 import java.util.Arrays;
 

@@ -17,7 +17,7 @@ public class Tugas1Cara2 {
 	}
 	
 	public static void main(String[] args) {
-		Tugas1Cara1 tugas = new Tugas1Cara1();
-		tugas.hitungBilangan();
+		Tugas1Cara2 tugas = new Tugas1Cara2();
+		tugas.getBilangan();
 	}
 }

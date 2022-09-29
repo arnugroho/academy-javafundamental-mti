@@ -13,6 +13,7 @@ public class JavaVector {
         // Using get()
         String element = animals.get(2);
         System.out.println("Element at index 2: " + element);
+        
 
         // Using iterator()
         Iterator<String> iterate = animals.iterator();
