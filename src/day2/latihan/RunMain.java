@@ -8,9 +8,10 @@ public class RunMain {
 		
 		BangunRuangServices bangunRuangServices = new BangunRuangServices();
 		Kubus kubus = new Kubus();
-//		kubus.sisi = 4;
+		kubus.setSisi(3);
 		Kubus responseKubus = bangunRuangServices.buildKubus(kubus);
-//		System.out.println(kubus.luas);
-//		System.out.println(responseKubus.luas);
+		
+		System.out.println(kubus.getLuas());
+		System.out.println(responseKubus.getLuas());
 	}
 }
